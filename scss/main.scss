@@ -2,7 +2,12 @@ $white: #ffffff;
 $black: #000000;
 $gray: #8c8c8c;
 $dark-gray: #696969;
-
+@mixin Alata {
+  font-family: "Alata", sans-serif;
+}
+@mixin Josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
 // Fonts
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
@@ -12,12 +17,13 @@ $dark-gray: #696969;
   html {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
   }
   body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
   }
   .header {
     width: 100%;
@@ -28,18 +34,18 @@ $dark-gray: #696969;
     display: flex;
     flex-direction: column;
     padding-bottom: 10rem;
-
+    margin-bottom: 4rem;
   }
   .text-container {
-    margin-top: 60%;
+    margin-top: 49%;
     width: 85%;
     border: 2px solid $white;
     align-self: center;
     p {
+      @include Josefin();
       width: 50%;
       color: $white;
       font-size: 8vw;
-      font-family: "Josefin Sans", sans-serif;
       text-transform: uppercase;
       padding-left: 1rem;
     }
@@ -56,6 +62,35 @@ $dark-gray: #696969;
 
   .navmenu {
     display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .introduction {
+    width: 90%;
+    margin-bottom: 3rem;
+    img {
+      width: 100%;
+    }
+    h2 {
+      @include Josefin();
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 9vw;
+      color: $black;
+      font-weight: 300;
+    }
+    p {
+      @include Alata();
+      margin: 0 0.2rem 0 0.2rem;
+      text-align: center;
+      color: $dark-gray;
+      font-size: 4.5vw;
+    }
   }
 }
 
