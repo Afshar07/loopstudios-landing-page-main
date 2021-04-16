@@ -21,23 +21,27 @@ $dark-gray: #696969;
   }
   .header {
     width: 100%;
-    height: auto;
+    height: max-content;
     background-image: url(../images/mobile/image-hero.jpg);
     background-size: 100%, 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10rem;
+
+  }
+  .text-container {
+    margin-top: 60%;
+    width: 85%;
+    border: 2px solid $white;
+    align-self: center;
     p {
-      margin-top: 20rem;
-      height: auto;
-      width: 75%;
-      padding: 2rem;
+      width: 50%;
       color: $white;
-      font-size: 3rem;
+      font-size: 8vw;
       font-family: "Josefin Sans", sans-serif;
       text-transform: uppercase;
-      border: 2px solid $white;
-      align-self: center;
+      padding-left: 1rem;
     }
   }
   .navbar {
