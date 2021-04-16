@@ -1,0 +1,43 @@
+$white: #ffffff;
+$black: #000000;
+$gray: #8c8c8c;
+$dark-gray: #696969;
+
+
+// Mobile Design
+@media only screen and (max-width: 768px){
+    html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .header{
+        height: 53rem;
+        background-image: url(../images/mobile/image-hero.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            margin: 2rem 2rem 0 2rem;
+        }
+    }
+
+
+    .navmenu{
+        display: none;
+    }
+}
+
+
+// Default Frontend Mentor Style
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
