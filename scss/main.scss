@@ -187,6 +187,8 @@ $dark-gray: #696969;
       @include Alata();
       font-size: 1.2rem;
       color: $gray;
+      width: 80%;
+      text-align: center;
     }
   }
 }
