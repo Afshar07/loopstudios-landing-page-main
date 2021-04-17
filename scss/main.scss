@@ -92,6 +92,55 @@ $dark-gray: #696969;
       font-size: 4.5vw;
     }
   }
+  .creation {
+    margin-bottom: 3rem;
+    h2 {
+      @include Josefin();
+      text-transform: uppercase;
+      font-size: 9vw;
+      font-weight: 300;
+    }
+    div {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10%;
+    }
+    img {
+      width: 90%;
+    }
+
+    p {
+      @include Josefin();
+      text-align: left;
+      width: 40%;
+      text-transform: uppercase;
+      color: $white;
+      margin: -20% 0 0 10%;
+      font-size: 7vw;
+      z-index: 2 !important;
+      position: relative;
+      &::after {
+        position: absolute;
+        left: 25vw;
+        content: "";
+        color: $white;
+        margin-top: -21vw;
+        margin-left: -30vw;
+        width: 90vw;
+        height: 235%;
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.436) 0%,
+          rgba(0, 0, 0, 0.636) 20%,
+          rgba(0, 0, 0, 0.436) 40%,
+          rgba(0, 0, 0, 0.236) 60%,
+          rgba(0, 0, 0, 0.236) 80%,
+          rgba(0, 0, 0, 0.036) 100%
+        );
+        z-index: -1 !important;
+      }
+    }
+  }
 }
 
 // Default Frontend Mentor Style
