@@ -345,6 +345,9 @@ $dark-gray: #696969;
       flex-wrap: wrap;
       div {
         margin-bottom: 5vw;
+        &:hover{
+          cursor: pointer;
+        }
         img {
           margin: 0.5vw;
           height: auto;
@@ -358,6 +361,17 @@ $dark-gray: #696969;
           margin: -35% 0 0 10%;
           position: relative;
           z-index: 2;
+          &:hover{
+            color: $black;
+          }
+          &:hover::after{
+            background: linear-gradient(
+              0deg,
+              rgba(219, 219, 219, 0.8) 50vh,
+              rgba(219, 219, 219, 0.8) 100vh
+            );
+            z-index: -1;
+          }
           &::after {
             position: absolute;
             content: "";
@@ -365,7 +379,7 @@ $dark-gray: #696969;
             left: 0;
             margin-left: -1.5vw;
             margin-top: -26.8vw;
-            height: 28rem;
+            height: 28.1rem;
             width: 18.8vw;
             background: linear-gradient(
               0deg,
@@ -379,10 +393,28 @@ $dark-gray: #696969;
               rgba(0, 0, 0, 0.036) 100vh
             );
             z-index: -1;
+
           }
         }
       }
     }
+    .see-all{
+      @include Josefin();
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $black;
+      background-color: $white;
+      letter-spacing: .2rem;
+      border: none;
+      padding: .7rem 1.2rem .7rem 1.2rem;
+      border: 1px solid $black;
+      cursor: pointer;
+      &:hover{
+        background-color: $black;
+        color: $white;
+      }
+    }
+  
   }
 }
 
