@@ -271,6 +271,11 @@ $dark-gray: #696969;
       text-decoration: none;
       color: $white;
       margin: 0 2rem 0 0;
+      transition: all 0.3s;
+      &:hover {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $white;
+      }
     }
   }
   .text-container {
@@ -345,7 +350,7 @@ $dark-gray: #696969;
       flex-wrap: wrap;
       div {
         margin-bottom: 5vw;
-        &:hover{
+        &:hover {
           cursor: pointer;
         }
         img {
@@ -361,10 +366,10 @@ $dark-gray: #696969;
           margin: -35% 0 0 10%;
           position: relative;
           z-index: 2;
-          &:hover{
+          &:hover {
             color: $black;
           }
-          &:hover::after{
+          &:hover::after {
             background: linear-gradient(
               0deg,
               rgba(219, 219, 219, 0.8) 50vh,
@@ -377,45 +382,93 @@ $dark-gray: #696969;
             content: "";
             top: 0;
             left: 0;
-            margin-left: -1.5vw;
-            margin-top: -26.8vw;
-            height: 28.1rem;
-            width: 18.8vw;
+            margin-left: -17%;
+            margin-top: -296%;
+            height: 28.2rem;
+            width: 207.5%;
             background: linear-gradient(
               0deg,
-              rgba(0, 0, 0, 0.636) 0vh,
-              rgba(0, 0, 0, 0.506) 20vh,
-              rgba(0, 0, 0, 0.306) 40vh,
-              rgba(0, 0, 0, 0.256) 50vh,
-              rgba(0, 0, 0, 0.206) 60vh,
-              rgba(0, 0, 0, 0.156) 70vh,
-              rgba(0, 0, 0, 0.106) 80vh,
-              rgba(0, 0, 0, 0.036) 100vh
+              rgba(0, 0, 0, 0.6) 0vh,
+              rgba(0, 0, 0, 0.6) 20vh,
+              rgba(0, 0, 0, 0.1) 40vh,
+              rgba(0, 0, 0, 0.1) 50vh,
+              rgba(0, 0, 0, 0.1) 60vh,
+              rgba(0, 0, 0, 0.1) 70vh,
+              rgba(0, 0, 0, 0.1) 80vh,
+              rgba(0, 0, 0, 0.1) 100vh
             );
             z-index: -1;
-
           }
         }
       }
     }
-    .see-all{
+    .see-all {
       @include Josefin();
       text-transform: uppercase;
       font-weight: bold;
       color: $black;
       background-color: $white;
-      letter-spacing: .2rem;
+      letter-spacing: 0.2rem;
       border: none;
-      padding: .7rem 1.2rem .7rem 1.2rem;
+      padding: 0.7rem 1.2rem 0.7rem 1.2rem;
       border: 1px solid $black;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: $black;
         color: $white;
       }
     }
-  
   }
+  .footer{
+    // display: flex;
+    align-items: baseline;
+    @include colflex();
+    margin-top: 4rem;
+    padding: 3rem 0 3rem 0;
+    background-color: $black;
+    height: auto;
+    p{
+      @include Alata();
+      color: $gray;
+      order: 4;
+      align-self: flex-end;
+      margin: 3rem 10% 0 0;
+    }
+  }
+  .footer-logo{
+    order: 1;
+    margin-left: 10%;
+  }
+  .social{
+    order: 2 !important;
+    align-self: flex-end;
+    margin: -7% 10% 0 0;
+    a{
+      text-decoration: none;
+    }
+    img{
+      margin-left: 1rem;
+      padding-bottom: .4rem;
+      &:hover{
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+  .footer-links{
+    order: 2;
+    margin: 3rem 0 0 10%;
+    a{
+      @include Alata();
+      text-decoration: none;
+      color: $white;
+      margin-right: 1.5rem;
+      padding-bottom: .2rem;
+      &:hover{
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+
 }
 
 // Default Frontend Mentor Style
