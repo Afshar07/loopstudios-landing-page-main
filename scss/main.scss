@@ -237,6 +237,7 @@ $dark-gray: #696969;
     height: 40rem;
     width: 100%;
     position: relative;
+    margin-bottom: 4rem;
     background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4) 50vw,
@@ -285,6 +286,38 @@ $dark-gray: #696969;
       width: 80%;
       margin: 2.5rem 0 2.5rem 0;
 
+    }
+  }
+  .main{
+    @include colflex();
+  }
+  .introduction{
+    width: 80%;
+    position: relative;
+    img{
+      margin-left: 10vw;
+    }
+    div{
+      background-color: $white;
+      position: absolute;
+      bottom: 0;
+      margin-left: 52vw;
+      width: 31vw;
+      padding: 4vw 0 0 4vw;
+      text-align: left;
+      h2{
+        @include Josefin();
+        text-transform: uppercase;
+        // text-align: center;
+        font-size: 2.8rem;
+        font-weight: 300;
+      }
+      p{
+        @include Alata();
+        color: $dark-gray;
+        text-align: left;
+        font-size: .9rem;
+      }
     }
   }
 }
