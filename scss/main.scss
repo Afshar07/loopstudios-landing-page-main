@@ -420,9 +420,9 @@ $dark-gray: #696969;
     }
   }
   .footer{
-    // display: flex;
-    align-items: baseline;
     @include colflex();
+    width: 100%;
+    align-items: baseline;
     margin-top: 4rem;
     padding: 3rem 0 3rem 0;
     background-color: $black;
